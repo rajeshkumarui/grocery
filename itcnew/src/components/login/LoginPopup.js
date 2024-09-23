@@ -20,11 +20,12 @@ const LoginPopup = () => {
     setUserLoggedIn,
   } = useContext(UserContext);
   const { popupClosed, showPopup } = useContext(PopupContext);
+  axios.defaults.withCredentials = true;
   const navigate = useNavigate();
   const login = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      axios.post("http://localhost:9002/login", signInUser).then((res) => {
+      axios.post("https://grocery-server-mu.vercel.app/login", signInUser).then((res) => {
         const userResponse = res.data;
         if (userResponse.status === 401){
           alert('Incorrect password!!');
