@@ -1,0 +1,49 @@
+.register > input {
+    border-radius: 8px;
+    border: 2px solid #dddfe2;
+    outline: none;
+    color: #1d2129;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.75rem;
+    width: 92%;
+    font-size: 1rem;
+}
+
+.register > .button {
+    margin: 0.5rem 0;
+    outline: none;
+    cursor: pointer;
+    min-width: 100px;
+    padding: 9px 12px;
+    background-color: var(--primary-medium);
+    color: var(--primary-light);
+    border-width: 2px;
+    border-color: var(--primary-medium);
+    border-radius: 16px;
+    font-size: 18px;
+    transition: all .3s;
+}
+
+.register > .button:hover {
+    background-color: var(--primary-medium-1);
+}
+
+.register-popup .close-btn, .login-popup .close-btn {
+    position: absolute;
+    top: -60px;
+    right: -1.9rem;
+    background: none;
+    width: auto;
+  }
+
+  .register-popup .close-btn:hover, .login-popup .close-btn:hover{
+    background: none;
+  }
+  
+  .register-popup .close-btn span, .login-popup .close-btn span {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background: url(../../components/assets/close-icon.png) no-repeat;
+  }
+  

@@ -1,0 +1,136 @@
+.location-popup h3 {
+  font-size: 18px;
+  color: var(--accent-dark-1);
+  text-align: left;
+  font-weight: 500;
+}
+.location-popup .popup-inner {
+  padding: 12px 24px;
+  width: 410px;
+  border-radius: 20px;
+  position: relative;
+}
+.inpur-area p {
+  text-align: left;
+}
+
+.inpur-area input {
+  height: 20px;
+  font-family: 'Roboto-Regular';
+  border: 2px solid var(--default-light-3);
+  margin: 8px 0px 12px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  outline: none;
+  max-width: 378px;
+}
+.inpur-area input:hover {
+  border-color: var(--primary-medium);
+}
+.inpur-area input:focus {
+  border: 1px solid var(--primary-medium);
+}
+.inpur-area input::placeholder {
+  color: var(--accent-medium-2);
+}
+.proceed-area button {
+  width: 200px;
+  margin: 0 auto;
+}
+button.disable:hover {
+  background-color: var(--default-light-3) !important;
+  color: var(--default-medium-1) !important;
+  border-color: var(--default-light-3);
+}
+.location-popup button.disable {
+  cursor: not-allowed;
+  filter: grayscale(0.5);
+  transform: translateZ(0px);
+  perspective: 1000px;
+  backface-visibility: hidden;
+  background-color: transparent;
+  color: #999;
+  font-weight: 500;
+}
+button.disable:hover {
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+    0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  border-width: 2px;
+  border-color: rgb(211, 232, 253);
+}
+
+button.proceed {
+  background-color: var(--primary-medium);
+  color: var(--primary-light);
+  opacity: 1;
+  font-weight: bold;
+  border-radius: 16px;
+  transition: all 0.3s;
+}
+button.proceed:hover {
+    border-width: 2px;
+    border-color: rgb(211, 232, 253);
+    background-color: var(--primary-medium-1);
+}
+.proceed-area {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.proceed-area .detect-location-btn {
+  background: none;
+  font-size: 14px;
+  font-family: 'Roboto-Medium';
+  background-color: var(--primary-light);
+  color: var(--default-dark);
+  border-width: 2px;
+  border-color: var(--primary-light);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.proceed-area img {
+  width: 163px;
+  margin: 0 auto;
+}
+.location-popup .close-btn {
+  position: absolute;
+  top: -60px;
+  right: -1.9rem;
+  background: none;
+  width: auto;
+}
+
+.location-popup .close-btn span {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  background: url(../components/assets/close-icon.png) no-repeat;
+}
+
+.location-popup .error-message {
+  font-size: 14px;
+  color: var(--error-dark);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.proceed-area .icon-error {
+  background-image: url(../components/assets/error-icon.png);
+  background-position: 100%;
+  width: 29px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.error-block {
+  display: flex;
+  padding: 0 3rem;
+}

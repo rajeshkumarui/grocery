@@ -1,0 +1,121 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 13px 38px;
+  border-bottom: 2px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.location {
+  font-size: 18px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.location span {
+  margin-right: 10px;
+}
+.user {
+  font-size: 18px;
+  color: #333;
+}
+
+.cart, .wishlist-wrapper {
+  font-size: 18px;
+  position: relative;
+  cursor: pointer;
+}
+
+.cart a {
+  color: var(--secondary-dark);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.cart a span, .wishlist-wrapper span {
+  position: absolute;
+  top: -5px;
+  padding-left: 3px;
+  font-weight: 500;
+}
+
+.login-register .login-btn {
+  background-color: var(--primary-medium);
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  border-radius: 16px;
+}
+.login-register .login-btn:hover {
+  background-color: var(--primary-medium-1);
+}
+.login-register .register-btn {
+  background-color: transparent;
+  font-size: 14px;
+  border-radius: 0;
+  color: var(--secondary-dark);
+}
+.register-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.login-register {
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0px 3px 7px 1px #c2b5b9;
+  position: absolute;
+  background: #fff;
+  top: 20px;
+  width: 295px;
+  left: -6rem;
+  /* top: 44px;
+    width: 295px;
+    left: 19rem;
+    transform: translateX(78%); */
+}
+.login-register p {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+.user-icon {
+  position: relative;
+}
+.guest-text,
+.logout-text {
+  font-weight: 500;
+  cursor: pointer;
+}
+span.loggedin-text {
+  color: #ff715b;
+  font-weight: 500;
+  cursor: text;
+}
+.wishlist-wrapper span{
+  text-decoration: none;
+  color: var(--secondary-dark);
+  font-size: 12px;
+}
+.clear-wishlist {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button.clear-wishlist:hover {
+  background: #be0808;
+}
