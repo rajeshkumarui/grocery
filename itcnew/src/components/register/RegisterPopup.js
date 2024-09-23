@@ -17,6 +17,7 @@ const RegisterPopup = () => {
     setSignInUser,
   } = useContext(UserContext);
   const { popupClosed, showPopup } = useContext(PopupContext);
+  axios.defaults.withCredentials = true;
 
   const navigate = useNavigate();
 
