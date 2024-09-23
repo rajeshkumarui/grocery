@@ -20,6 +20,7 @@ const LoginPopup = () => {
     setUserLoggedIn,
   } = useContext(UserContext);
   const { popupClosed, showPopup } = useContext(PopupContext);
+  axios.defaults.withCredentials = true;
   const navigate = useNavigate();
   const login = (e) => {
     e.preventDefault();
