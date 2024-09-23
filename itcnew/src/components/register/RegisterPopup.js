@@ -24,7 +24,7 @@ const RegisterPopup = () => {
     const { name, email, password, reEnterPassword } = user;
     if (validateFormResgister()) {
       if (name && email && password && (password === reEnterPassword)) {
-        axios.post("http://localhost:9002/register", user).then((res) => {
+        axios.post("https://grocery-server-mu.vercel.app/register", user).then((res) => {
           if (res.status === 201) {
             alert(res.data.message);
             setSignInUser({});
