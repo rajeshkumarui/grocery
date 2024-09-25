@@ -5,11 +5,14 @@ import mongoose from "mongoose";
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(cors({
-  origin: "https://grocery-client-phi.vercel.app",
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true,
-}));
+app.use(
+  cors({
+    origin: "https://grocery-client-phi.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+    optionSuccessStatus: 200,
+  })
+);
 
 mongoose
   .connect(
@@ -38,16 +41,13 @@ app.post("/login", (req, res) => {
   UserDetails.findOne({ email: email })
     .then((user) => {
       if (user) {
-        console.log(user.password); 
+        console.log(user.password);
         if (password == user.password) {
           res.send({ message: "User logged in successfully", user: user });
-        } 
-        else {
+        } else {
           res.send({ message: "password incorrect", status: 401 });
         }
-      } 
-
-      else {
+      } else {
         res.send({ message: "user not registered", status: 404 });
       }
     })
