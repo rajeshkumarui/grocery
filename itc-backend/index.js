@@ -7,9 +7,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors({
   origin: "https://grocery-client-phi.vercel.app",
-  methods: ["POST"],
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
-  optionSuccessStatus:200,
 }));
 
 mongoose

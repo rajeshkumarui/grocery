@@ -25,7 +25,7 @@ const LoginPopup = () => {
   const login = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      axios.post("https://grocery-server-mu.vercel.app/login", signInUser).then((res) => {
+      axios.post("/login", signInUser).then((res) => {
         const userResponse = res.data;
         if (userResponse.status === 401){
           alert('Incorrect password!!');
