@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 
 const app = express();
 const corsConfig = {
-  origin: ["https://grocery-client-phi.vercel.app"],
+  origin: "*",
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   credentials: true
 }
