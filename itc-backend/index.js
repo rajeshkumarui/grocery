@@ -8,9 +8,6 @@ app.use(express.json());
 app.use(
   cors({
     origin: "https://grocery-client-phi.vercel.app",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-    optionSuccessStatus: 200,
   })
 );
 
@@ -38,7 +35,6 @@ const UserDetails = new mongoose.model("UserDetails", userSchema);
 // Routes
 app.post("/login", (req, res) => {
   const { email, password } = req.body;
-  res.header("Access-Control-Allow-Origin", "*");
   UserDetails.findOne({ email: email })
     .then((user) => {
       if (user) {
