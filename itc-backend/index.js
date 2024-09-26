@@ -38,6 +38,7 @@ const UserDetails = new mongoose.model("UserDetails", userSchema);
 // Routes
 app.post("/login", (req, res) => {
   const { email, password } = req.body;
+  res.header("Access-Control-Allow-Origin", "*");
   UserDetails.findOne({ email: email })
     .then((user) => {
       if (user) {
