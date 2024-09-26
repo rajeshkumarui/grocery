@@ -13,8 +13,6 @@ app.use(cors(corsConfig));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-
-
 mongoose
   .connect(
     "mongodb+srv://rajesh:rajesh003@cluster0.0kqjs4v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
