@@ -13,18 +13,7 @@ app.use(
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-mongoose
-  .connect(
-    "mongodb+srv://rajesh:rajesh003@cluster0.0kqjs4v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-  )
-  .then((success) => {
-    app.listen(9002, () => {
-      console.log("BE started at port 9002");
-      // console.log(success)
-    });
-    console.log("database conneceted successfully....");
-  })
-  .catch((error) => console.log(error));
+
 
 app.get("/", (req, res) => {
     res.json("Hello wOrLd");
