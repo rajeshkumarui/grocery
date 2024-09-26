@@ -8,6 +8,8 @@ app.use(express.json());
 app.use(
   cors({
     origin: "https://grocery-client-phi.vercel.app",
+    methods: ["GET", "PUT", "POST", "DELETE", "OPTIONS"],
+    credentials: true
   })
 );
 
