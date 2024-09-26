@@ -26,6 +26,10 @@ mongoose
   })
   .catch((error) => console.log(error));
 
+app.get("/", (req, res) => {
+    res.json("Hello wOrLd");
+})
+
 const userSchema = new mongoose.Schema({
   name: String,
   email: String,
