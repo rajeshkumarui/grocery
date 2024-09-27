@@ -3,12 +3,12 @@ import cors from "cors";
 import mongoose from "mongoose";
 
 const app = express();
-// const corsConfig = {
-//   origin: ["https://grocery-client-phi.vercel.app"],
-//   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-//   credentials: true
-// }
-// app.options("", cors(corsConfig));
+ const corsConfig = {
+     origin: ["https://grocery-client-phi.vercel.app"],
+     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+     credentials: true
+ }
+ app.options("", cors(corsConfig));
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
