@@ -9,7 +9,7 @@ const app = express();
      credentials: true
  }
  app.options("", cors(corsConfig));
-app.use(cors());
+app.use(cors(corsConfig));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
