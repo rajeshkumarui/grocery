@@ -35,7 +35,7 @@ const products = [
     price: 64,
     discountPrice: 50,
     weight: "150 g",
-    locations: ['Bengaluru Urban'],
+    locations: ['Bangalore', 'Patna'],
     image:
       "https://www.itcstore.in/_next/image?url=https%3A%2F%2Fadmin.itcstore.in%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fk%2Fsku1782.png%3Foptimize%3Dmedium%26fit%3Dbounds%26height%3D%26width%3D%26height%3D200%26width%3D200&w=1920&q=75",
   },
@@ -45,7 +45,7 @@ const products = [
     price: 64,
     discountPrice: 40,
     weight: "150 g",
-    locations: ['Bengaluru Urban'],
+    locations: ['Bangalore', 'Patna'],
     image:
       "https://www.itcstore.in/_next/image?url=https%3A%2F%2Fadmin.itcstore.in%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fk%2Fsku1781.png%3Foptimize%3Dmedium%26fit%3Dbounds%26height%3D%26width%3D%26height%3D200%26width%3D200&w=1920&q=75",
   },
@@ -55,7 +55,7 @@ const products = [
     price: 64,
     discountPrice: 50,
     weight: "150 g",
-    locations: ['Bengaluru Urban'],
+    locations: ['Bangalore', 'Patna'],
     image:
       "https://www.itcstore.in/_next/image?url=https%3A%2F%2Fadmin.itcstore.in%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fk%2Fsku1780.png%3Foptimize%3Dmedium%26fit%3Dbounds%26height%3D%26width%3D%26height%3D200%26width%3D200&w=1920&q=75",
   },
@@ -65,7 +65,7 @@ const products = [
     price: 10,
     discountPrice: 9,
     weight: "28.2 g",
-    locations: ['Bengaluru Urban'],
+    locations: ['Bangalore', 'Patna'],
     image:
       "https://www.itcstore.in/_next/image?url=https%3A%2F%2Fadmin.itcstore.in%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fk%2Fsku1776_1.png%3Foptimize%3Dmedium%26fit%3Dbounds%26height%3D%26width%3D%26height%3D200%26width%3D200&w=1920&q=75",
   },
@@ -75,7 +75,7 @@ const products = [
     price: 10,
     discountPrice: 5,
     weight: "50 g",
-    locations:['Bengaluru Urban', 'Kolkata'],
+    locations:['Bangalore', 'Patna', 'Kolkata'],
     image:
       "https://www.itcstore.in/_next/image?url=https%3A%2F%2Fadmin.itcstore.in%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fk%2Fsku1774.png%3Foptimize%3Dmedium%26fit%3Dbounds%26height%3D%26width%3D%26height%3D200%26width%3D200&w=1920&q=75",
   },
@@ -85,7 +85,7 @@ const products = [
     price: 10,
     discountPrice: 5,
     weight: "23 g",
-    locations: ['Bengaluru Urban', 'Kolkata'],
+    locations: ['Bangalore', 'Patna', 'Kolkata'],
     image:
       "https://www.itcstore.in/_next/image?url=https%3A%2F%2Fadmin.itcstore.in%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fk%2Fsku_671.png%3Foptimize%3Dmedium%26fit%3Dbounds%26height%3D%26width%3D%26height%3D200%26width%3D200&w=1920&q=75",
   },
@@ -95,7 +95,7 @@ const products = [
     price: 10,
     discountPrice: 5,
     weight: "23 g",
-    locations: ['Bengaluru Urban', 'Kolkata'],
+    locations: ['Bangalore', 'Patna', 'Kolkata'],
     image:
       "https://www.itcstore.in/_next/image?url=https%3A%2F%2Fadmin.itcstore.in%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fk%2Fsku_670.png%3Foptimize%3Dmedium%26fit%3Dbounds%26height%3D%26width%3D%26height%3D200%26width%3D200&w=1920&q=75",
   },
@@ -105,7 +105,7 @@ const products = [
     price: 20,
     discountPrice: 10,
     weight: "75 g",
-    locations: ['Kolkata', 'Bengaluru Urban'],
+    locations: ['Kolkata', 'Bangalore', 'Patna'],
     image:
       "https://www.itcstore.in/_next/image?url=https%3A%2F%2Fadmin.itcstore.in%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fk%2Fsku_660.png%3Foptimize%3Dmedium%26fit%3Dbounds%26height%3D%26width%3D%26height%3D200%26width%3D200&w=1920&q=75",
   },
@@ -115,7 +115,7 @@ const products = [
     price: 120,
     discountPrice: 100,
     weight: "1 kg",
-    locations: ['Kolkata', 'Bengaluru Urban'],
+    locations: ['Kolkata', 'Bangalore', 'Patna'],
     image:
       "https://www.itcstore.in/_next/image?url=https%3A%2F%2Fadmin.itcstore.in%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fk%2Fsku_659.png%3Foptimize%3Dmedium%26fit%3Dbounds%26height%3D%26width%3D%26height%3D200%26width%3D200&w=1920&q=75",
   },
